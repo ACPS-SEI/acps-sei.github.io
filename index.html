@@ -1,0 +1,75 @@
+---
+layout: landing-page
+---
+
+<section id="intro" class="wrapper style1">
+	<div class="container">
+		<div class="row">
+
+			<div class="8u">
+				<section>
+					<h2>About Assuring Cyber-Physical Team</h2>
+					<p>
+					We do cool things
+					</p>
+				</section>
+			</div> <!-- 8u -->
+
+			<div class="4u">
+				<section>
+					<h3>News</h3>
+					<ul class="alt">
+						{% for post in site.posts %}
+						<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%m/%d/%Y" }} {{ post.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</section>
+			</div> <!-- 8u -->
+		</div> <!--row -->
+	</div> <!-- container -->
+</section>
+
+<section id="features" class="wrapper style1">
+	<header class="major">
+		<h2>ACPS Contributions</h2>
+		<p>Yes we can</p>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="4u">
+				<section class="special box">
+					<i class="icon fa-book major"></i>
+					<h3>Publications</h3>
+					<p>List of publications
+					</p>
+					<ul class="actions">
+						<li><a href="{{ site.baseurl }}publis.html" class="button alt">Learn More</a></li>
+					</ul>
+				</section>
+			</div>
+			<div class="4u">
+				<section class="special box">
+					<i class="icon fa-terminal major"></i>
+					<h3>Tools</h3>
+					<p>List of tools
+					</p>
+					<ul class="actions">
+						<li><a href="{{ site.baseurl }}tools.html" class="button alt">Learn More</a></li>
+					</ul>
+				</section>
+			</div>
+			<div class="4u">
+				<section class="special box">
+					<i class="icon fa-check-square major"></i>
+					<h3>Demonstrators</h3>
+					<p>Showcase
+					</p>
+					<ul class="actions">
+						<li><a href="{{ site.baseurl }}demos.html" class="button alt">Learn More</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</div>
+</section>

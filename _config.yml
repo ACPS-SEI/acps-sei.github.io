@@ -1,0 +1,12 @@
+# Site settings
+title: Assuring Cyber-Physical Systems
+email: jhugues@andrew.cmu.edu
+description: > # this means to ignore newlines until "baseurl:"
+  Assuring Cyber-Physical Systems team at the Software Engineering Institute
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://acps-sei.github.io" # the base hostname & protocol for your site
+twitter_username:
+github_username:  jjhugues
+
+# Build settings
+markdown: kramdown
