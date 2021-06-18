@@ -1,7 +1,9 @@
 ---
 layout: post
-title: News
+title: Publications
 ---
+
+Please find below our list of publications.
 
 
 
