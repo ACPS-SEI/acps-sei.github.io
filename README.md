@@ -24,4 +24,7 @@ The site is organized as follows
 
 * In a `.md` file, the first cartouche indicates which layout to use from `_layout` directory
 
-* To regenerate the list of publications, run `generate_publis.sh`, see script for installing dependencies.
+* To regenerate the list of publications,
+    - update `acps.bib`
+    - add a `\cite{}` in `publis.md.ref`
+    - run `generate_publis.sh`, see script for installing dependencies.
