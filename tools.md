@@ -3,7 +3,7 @@ layout: post
 title: Tools
 ---
 
-This site list the tools that the ACPS directorate has developed including architectural analysis tools, CPS analysis closer to the code level, and execution environment such as real-time schedulers and the corresponding analyses.
+This site list the tools that the ACPS directorate has developed including architectural analysis tools, CPS analysis closer to the code level, and execution environment such as real-time schedulers and the corresponding analyses and verified hypervisors.
 
  Architectural design and analysis techology comprises, first the Open-Source-AADL-Tool-Environment (OSATE) that can be obtain from its own independent site: [OSATE Site](https://osate.org).
 
