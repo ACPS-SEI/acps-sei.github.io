@@ -73,9 +73,13 @@ You can download sample aadl models and contracts from: ([Annex source code and 
 # References
 
 <p>
-1. Dionisio de Niz, Bjorn Andersson, Mark H. Klein, John Lehoczky (Carnegie Mellon University), Hyoseung Kim (University of California, Riverside), George Romanski (Federal Aviation Administration), Jonathan Preston (Lockheed Martin Corporation), Daniel Shapiro (Institute of Defense Analysis), Floyd Fazi (Lockheed Martin Corporation), Douglas Schmidt (Vanderbilt University), David Tate (Institute of Defense Analysis), Gordon Putsche (The Boeing Company), Ronald Koontz (Boeing Company). Encoding Verification Arguments to Analyze High-Level Design Certification Claims: Experiment Zero (E0). Technical Report ([ASERT Workgroup](https://asertw.org)).
+1. Dionisio de Niz, Bjorn Andersson, Mark H. Klein, John Lehoczky (Carnegie Mellon University), Hyoseung Kim (University of California, Riverside), George Romanski (Federal Aviation Administration), Jonathan Preston (Lockheed Martin Corporation), Daniel Shapiro (Institute of Defense Analysis), Floyd Fazi (Lockheed Martin Corporation), Douglas Schmidt (Vanderbilt University), David Tate (Institute of Defense Analysis), Gordon Putsche (The Boeing Company), Ronald Koontz (Boeing Company). <br>
+Encoding Verification Arguments to Analyze High-Level Design Certification Claims: Experiment Zero (E0). <br>
+Technical Report ([ASERT Workgroup](https://asertw.org)).
 </p>
 
 <p>
-2. Dionisio de Niz and Lutz Wrage. Symbolic Refinement for CPS. ACM SIGAda Ada Letters 43(1):88-93. DOI 10.1145/3631483.3631498. 2023
+2. Dionisio de Niz and Lutz Wrage. <br>
+Symbolic Refinement for CPS. <br>
+ACM SIGAda Ada Letters 43(1):88-93. DOI 10.1145/3631483.3631498. 2023
 </p>
