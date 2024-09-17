@@ -70,6 +70,77 @@ Then install OSATE and the SAR plugin with the following instructions:
 
 You can download sample aadl models and contracts from: ([Annex source code and examples](https://github.com/osate/contract-annex.git))
 
+# CI202 Flight Incident Models
+
+Within the contract-annex sample aadl models and SAR verification plans the folder <b>AIRCRAFT330-Replication</b> contains a number of models within the aadl file: <b>Aircraft330.aadl</b>.
+
+Two of this model implementations reflect the original design with the channel asynchrony (as interpreted by the ASERT team) and the other the modified one as described in the report in [1]. 
+
+1. Original model with channel asynchrony : <b>System FlightSystem.CommonComCommonMonSesnors</b>.
+
+2. Modified model without channel asynchrony: <b>System flightSystem.externalIndependentSensors</b>.
+
+It is worth noting that both models at the end of the system description you can find the reference to the verification plan used for this specific system. For instance for the <b>System FlightSystem.externalCommonComCommonMonSesnors</b> the line 1340 specifies the plan as:
+
+<verbatim>
+			annex contract {**
+				verify FlowSynchronizationContract::verifySynchronization;
+			**};
+</verbatim>
+
+## Running The Verification Plan
+
+To run the verification plan you need to :
+
+1. Select the system where the verification plan will be run in the "Outline" window on the right as shown in the figure below.
+
+<figure>
+<img src="images/osate-element-selector.png" height="500" align="middle"/>
+<figcaption>OSATE Outline Window</figcaption>
+</figure>
+
+2. Right-click and select the "Instantiate" option. This will create an instance that will show up in the "instances" subfolder of the project as show in the figure below.
+
+<figure>
+<img src="images/instances.png" height="500" align="middle"/>
+<figcaption>Instances</figcaption>
+</figure>
+
+3. Click the instance on the instance window as shown in the figure above.
+
+4. Select the menu "Analyses->Analysis Contracts->Execute Verification Plans"
+
+5. If the verification plan finds a problem it will show it as an "Error" marker in the "Problems" window on lower part of OSATE as shown in the figure below.
+
+
+<figure>
+<img src="images/problems-with-errors.png" width="700" align="middle"/>
+<figcaption>Problems window with errors</figcaption>
+</figure>
+
+In this window, double clicking on the error marker will take you to the instance component where the error occur. Right-clicking on this component and selecting "Goto Instance Object Source" will take you to the definition of the object in the AADL file.
+
+6. If no error occured, the problems window shows under the "Infos" subtree all the analyses run by the verification plan argumentation hierarchy. It is possible to double click the marker to navigate to the instance component where the analysis result applies and from there navigating to the AADL source by right-clicking and selecting "Goto Instance Object Source" as well.
+
+<figure>
+<img src="images/problems-no-errors.png" width="700" align="middle"/>
+<figcaption>Problems window without errors</figcaption>
+</figure>
+
+## Generating a Goal Structure Notation (GSN) graph view of the verification plan
+
+It is possible to generate a GSN graph from the plan that follows the verification plan to simplify the navigation. To do this:
+
+a. Open the verification plan by pressing Ctrl and click on the verification plan in the aadl file (e.g. line 1340 of the flight system example above).
+
+b. right-click in the "Outline" window the verification plan and select the menu "Generate YAML-GSN".
+
+This will generate a set of file in the subfolder "yaml-gen". You can then double click "svg" file with the name of the verification plan, e.g. <b>verifySynchronizagion.gsn.svg</b>. 
+
+This will open the GSN and you will able to click each of the nodes to navigate the argumentation. 
+
+Clicking on an analysis node (circle) will take you to the problems window to the error marker of the info marker depending on the last execution of the verification plan.
+
 # References
 
 <p>
