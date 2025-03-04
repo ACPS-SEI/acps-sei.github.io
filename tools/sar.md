@@ -49,6 +49,15 @@ We created a verification plan that used real-time scheduling to verify the end-
 
 With this plan we verified that if each component in the self-checking pair uses its own sensor and thread to read the sensor then it is not possible to ensure that the input jitter will be zero. Hence, we modify the architecture and used a single sensor and thread per self-checking pair that ensures that both self-checking pair functions received the same sensor readings. 
 
+# Flight Incident Analysys Video Presentation and Demo 
+
+This is a video presentation and demo of the flight incident analysis.
+
+<video height="500" controls>
+  <source src="images/flight-incident-analysis-symbolic-argumentation-and-demo.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 # Installing SAR
 
 SAR is implemented as a plugin to the OSATE tool (osate.org). In order to install it you first need to install python 3.10 and then install the z3py ([Z3 solver package for python](https://pypi.org/project/z3-solver/)).
