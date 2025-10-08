@@ -155,7 +155,7 @@ Clicking on an analysis node (circle) will take you to the problems window to th
 An integral part of the SAR framework is the Model Query Language (MQL) that is used to query aadl models and run
 analyses on them. Importantly, MQL allows querying multiple architectural languages including SysML v2 and SysML v1. 
 
-In the video below we demonstrate the use of a sequence diagram from SysML v1 create in Cameo that is queried to perform and end-to-end delay and schedulability analysis. The model is in fact an extract of the flight incident analysis discussed above. The video also shows how the results are exported to the judgement architecture of the Large-Scale Assurance project.
+In the video below we demonstrate the use of a sequence diagram from SysML v1 created in Cameo that is queried to perform and end-to-end delay and schedulability analysis. The model is in fact an extract of the flight incident analysis discussed above. The video also shows how the results are exported to the judgement architecture of the Large-Scale Assurance project.
 
 
 <video height="500" controls>
