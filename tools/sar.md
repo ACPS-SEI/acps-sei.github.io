@@ -150,6 +150,20 @@ This will open the GSN and you will able to click each of the nodes to navigate 
 
 Clicking on an analysis node (circle) will take you to the problems window to the error marker of the info marker depending on the last execution of the verification plan.
 
+# Querying SysML models from SAR
+
+An integral part of the SAR framework is the Model Query Language (MQL) that is used to query aadl models and run
+analyses on them. Importantly, MQL allows querying multiple architectural languages including SysML v2 and SysML v1. 
+
+In the video below we demonstrate the use of a sequence diagram from SysML v1 create in Cameo that is queried to perform and end-to-end delay and schedulability analysis. The model is in fact an extract of the flight incident analysis discussed above. The video also shows how the results are exported to the judgement architecture of the Large-Scale Assurance project.
+
+
+<video height="500" controls>
+  <source src="images/sysml-sar-sacm-tutorial-v2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+
 # References
 
 <p>
