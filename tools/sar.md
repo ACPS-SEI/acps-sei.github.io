@@ -3,7 +3,7 @@ layout: post
 title: Symbolic Assurance Refinement
 ---
 
-The Symbolic Assurance Refinement creates an argumentation based on verification analysis from different domains (real-time verification, logical verification, control-theoretic verification). For each analysis we create a contract that specifies what are the assumptions of the analysis and what are the guarantees that it provices as shown in the figure below.
+The Symbolic Assurance Refinement creates an argumentation based on verification analysis from different domains (e.g., real-time verification, logical verification, control-theoretic verification). For each analysis we create a contract that specifies the assumptions the analysis make and the guarantees that it provides as shown in the figure below.
 
 
 <figure>
@@ -15,7 +15,7 @@ The assumptions of the analysis contract can be validated by simple comparisons 
 
 # Argumentation
 
-To automate certification, a verification plan is created with the certification claims using SMT (Satisfiability Modulus Theory). Then a number of analysis contracts are added to the plan to would verify different parts of the certification claims. The each analysis contract will use other contracts to satisfy other assumptions, creating an argumentation three as shown in the figure below.
+To automate certification, a verification plan is created with the certification claims using SMT (Satisfiability Modulus Theory). Then a number of analysis contracts are added to the plan to verify different parts of the certification claims. Then each analysis contract use other contracts to satisfy other assumptions, creating an argumentation tree as shown in the figure below.
 
 
 <figure>
@@ -25,7 +25,7 @@ To automate certification, a verification plan is created with the certification
 
 # A Flight Incident Sample Argumentation with SAR
 
-As part of our engagement with the CPS and certification community we created the ASERT workgroup (https://asertw.org) with participation from the FAA, DOT&E, DTVV, NASA, Boeing, LMCO and others. The work in this group is structured as a set of experiments that evaluates the development of technology for automated certification. In the first experiment, named Experiment Zero we model the case of a triple computer failure during the landing of flight CI202 in Taipei in 2020. More specifically, during the landing, the plane bounced of the ground a couple of times creating a channel asynchrony between self-checking pairs. Self checking pairs are function executed in different processors and developed by different teams that calculate the same value. The value calculated by a pair is compared with each other and if they differ by a certain amount, it is assumed that the calculation is incorrect and the system fails over to another replica of this pair. In the plane from the incident there were three replicas and the three failed one after another.
+As part of our engagement with the CPS and certification community we created the ASERT workgroup (https://asertw.org) with participation from the FAA, DOT&E, DTVV, NASA, Boeing, LMCO and others. The work in this group is structured as a set of experiments that evaluates the development of technology for automated certification. In the first experiment, named Experiment Zero, we model the case of a triple computer failure during the landing of flight CI202 in Taipei in 2020. More specifically, during the landing, the plane bounced of the ground a couple of times creating a channel asynchrony between self-checking pairs. Self checking pairs are functions executed in different processors and developed by different teams that calculate the same value. The value calculated by a pair is compared with each other and if they differ by a certain amount, it is assumed that the calculation is incorrect and the system fails over to another replica of this pair. In the plane from the incident there were three replicas and the three failed one after another.
 
 ## Channel Asynchrony
 
