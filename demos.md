@@ -1,5 +1,5 @@
 ---
 layout: post
-title: Demonstrator by Assuring Cyber-Physical Systems
+title: Demonstrator by Rapid Fielding of High Assurance Software
 ---
 
